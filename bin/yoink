@@ -1,0 +1,5 @@
+#! /bin/zsh
+# usage:
+# $ yoink fileName
+# this saves the path of the file. Use yeet to invoke move on that file in the current directory
+readlink -f $@ > /tmp/yoink

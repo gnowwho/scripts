@@ -1,0 +1,8 @@
+#! /bin/zsh
+
+# usage:
+# yeet should always be precedeed by yoink. 
+# yeet moves the file specified by the path saved in /tmp/yoink to the current directory, then deletes the file to reduce inconsistencies.
+
+mv $(cat /tmp/yoink) .
+rm /tmp/yoink
